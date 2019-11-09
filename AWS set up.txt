@@ -1,0 +1,3 @@
+-- Here are is the required Amazon Web Services set up required to test and run
+our Alexa skill
+Adapted from: https://github.com/alexa/skill-sample-java-fact
