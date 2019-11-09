@@ -8,3 +8,5 @@ Adapted from: https://github.com/alexa/skill-sample-java-fact
 - run commands as instructed
 (this required defining my JAVA_HOME, adding it to the PATH and installing Maven
 https://www.mkyong.com/java/how-to-set-java_home-on-windows-10/ and https://www.mkyong.com/maven/how-to-install-maven-in-windows/)
+
+com.amazon.ask.airplanefacts.AirplaneFactsStreamHandler
