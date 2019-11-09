@@ -10,3 +10,4 @@ Adapted from: https://github.com/alexa/skill-sample-java-fact
 https://www.mkyong.com/java/how-to-set-java_home-on-windows-10/ and https://www.mkyong.com/maven/how-to-install-maven-in-windows/)
 
 com.amazon.ask.airplanefacts.AirplaneFactsStreamHandler
+need to uncomment and add skill ID
