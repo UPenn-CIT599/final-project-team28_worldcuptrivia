@@ -8,7 +8,7 @@ Pierre Philippe Mourier
 #### CIT 591, Fall ‘19
 
 ### Project idea
-We will use the skills and concepts learnt in CIT 591 to build a World Cup soccer trivia skill on Amazon’s Alexa device. We will start from a basic Amazon tutorial skill (airplane facts) but extend its functionalities to include multiple categories. In this way, users will not only be able to ask for general trivia about the World Cup, but also more specific information about particular years of competition, national teams, players, and so on. Once these core functions are in place, we would also explore potential stretch goals: incorporating voice search, linking to a larger data set, and possibly introducing a game component (e.g. multiple choice questions).
+We will use the skills and concepts learnt in CIT 591 to build a World Cup soccer trivia skill on Amazon’s Alexa device. We will start from a basic Amazon tutorial skill ([airplane facts](https://github.com/alexa/skill-sample-java-fact)) but extend its functionalities to include multiple categories. In this way, users will not only be able to ask for general trivia about the World Cup, but also more specific information about particular years of competition, national teams, players, and so on. Once these core functions are in place, we would also explore potential stretch goals: incorporating voice search, linking to a larger data set, and possibly introducing a game component (e.g. multiple choice questions).
 
 ### Work breakdown
 We will check in weekly to review progress, discuss challenges and next steps & share the work.
