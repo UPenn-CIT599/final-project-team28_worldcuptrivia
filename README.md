@@ -20,7 +20,11 @@ We will be inspired by the Agile software development approach, starting with co
 - Created AWS Account
 - Created Lambda function
 - Created Amazon Developer (Alexa)
-2. Replicate basic functionalities of “airplane facts” tutorial (Harun & Pierre)
+2. Replicate basic functionalities of “airplane facts” tutorial (Harun & Pierre) :heavy_check_mark:
+- Download [airplane facts tutorial repo](https://github.com/alexa/skill-sample-java-fact) locally
+- Set up the Lambda function
+- Build and deploy the Alexa Skill
+- Make a small change to the Skill (get Alexa to give "Harun & Pierre" instead of one of the airplane facts)
 3. Planning/CRC cards for core functions (Harun)
 4. Testing plan for core functions (Pierre)
 5. Programming of core functions (TBD)
