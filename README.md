@@ -16,7 +16,10 @@ We will check in weekly to review progress, discuss challenges and next steps & 
 
 We will be inspired by the Agile software development approach, starting with core functions and then taking on more ambitious stretch goals, while adjusting our plan based on user feedback, available resources, pace and obstacles faced.
 
-1. AWS account set up (Pierre)
+1. AWS account set up :heavy_check_mark:
+- Created AWS Account
+- Created Lambda function
+- Created Amazon Developer (Alexa)
 2. Replicate basic functionalities of “airplane facts” tutorial (Harun & Pierre)
 3. Planning/CRC cards for core functions (Harun)
 4. Testing plan for core functions (Pierre)
