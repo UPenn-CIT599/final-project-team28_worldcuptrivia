@@ -34,7 +34,7 @@ public class FactsAnalysis {
 	 * This method computes the average accuracy for a given team
 	 * @param wc a WorldCup object, itself an ArrayList of Games objects
 	 * @param team a team name
-	 * @return the $ accuracy for given team at a given world cup
+	 * @return the % accuracy for given team at a given world cup
 	 */
 	public double averageAccuracy(WorldCup wc, String team) {
 		}
