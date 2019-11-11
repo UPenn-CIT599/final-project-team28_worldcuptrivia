@@ -2,9 +2,9 @@
 This will be the main analysis class
 **/
 
-package worldcup_trivia;
+package worldcuptrivia;
 
-public class FactsAnalysis {
+public class SoccerAnalysis {
 
 	/**
 	 * This method computes the game with the most goals
