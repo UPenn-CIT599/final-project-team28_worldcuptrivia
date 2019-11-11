@@ -15,7 +15,7 @@ public class FactsAnalysis {
 		}
 	
 	/**
-	 * This method computes the game with the most goals
+	 * This method computes the team with the most goals
 	 * @param wc a WorldCup object, itself an ArrayList of Games objects
 	 * @return the name of the team with the most goals
 	 */
@@ -23,7 +23,7 @@ public class FactsAnalysis {
 		}
 	
 	/**
-	 * This method computes the game with least goals against
+	 * This method computes the team with least goals against
 	 * @param wc a WorldCup object, itself an ArrayList of Games objects
 	 * @return the name of the team with the least goals against
 	 */
