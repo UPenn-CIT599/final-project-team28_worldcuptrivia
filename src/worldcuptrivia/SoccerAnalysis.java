@@ -16,6 +16,7 @@ public class SoccerAnalysis {
 		// create a hashmap for games and total goals
 		// loop through all games, add-up goals for and against and add to hashmaps
 		// return the game id for the game with max goals
+		// TODO write a unit test, number of goals should be in reasonable range (0-20)
 		return id;
 		}
 	
