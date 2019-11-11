@@ -1,5 +1,5 @@
 package worldcuptrivia;
 
-public class fileParser {
+public class FileParser {
 
 }
