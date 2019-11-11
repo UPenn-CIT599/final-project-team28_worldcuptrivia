@@ -1,5 +1,5 @@
 /**
-This will be the main analysis class
+ * This will be the main analysis class
 **/
 
 package worldcuptrivia;
@@ -21,8 +21,8 @@ public class SoccerAnalysis {
 	 * @param someGames an ArrayList of Games objects
 	 * @return the id of the game with the most goals
 	 */
-	public int gameWithMostGoals(ArrayList<Game> someGames) {
-		int id = 0;
+	public String gameWithMostGoals(ArrayList<Game> someGames) {
+		String id = "";
 		// create a hashmap for games and total goals
 		// loop through all games, add-up goals for and against and add to hashmaps
 		// return the game id for the game with max goals
@@ -57,7 +57,7 @@ public class SoccerAnalysis {
 		}
 	
 	/**
-	 * This method computes team should should see if you want to see woodwork
+	 * This method computes team you should see if you want to see woodwork
 	 * @param someGames an ArrayList of Games objects
 	 * @return the team name
 	 */
@@ -65,7 +65,20 @@ public class SoccerAnalysis {
 		String team = null;
 		// create a hashmap for teams and total woodwork
 		// loop through all games of a given team, add-up woodwork add to hashmaps
-		// return the team name for the team with most wwodwork
+		// return the team name for the team with most woodwork
+		return team;
+		}
+	
+	/**
+	 * This method computes team you should see if you want to see red cards
+	 * @param someGames an ArrayList of Games objects
+	 * @return the team name
+	 */
+	public String mostViolent(ArrayList<Game> someGames) {
+		String team = null;
+		// create a hashmap for teams and total red cards
+		// loop through all games of a given team, add-up redcards add to hashmaps
+		// return the team name for the team with most red cards
 		return team;
 		}
 
