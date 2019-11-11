@@ -48,10 +48,9 @@ public class SoccerAnalysis {
 	/**
 	 * This method computes team should should see if you want to see woodwork
 	 * @param wc a WorldCup object, itself an ArrayList of Games objects
-	 * @param team a team name
 	 * @return the team name
 	 */
-	public String mostWoodWork(WorldCup wc, String team) {
+	public String mostWoodWork(WorldCup wc) {
 		String team = null;
 		// create a hashmap for teams and total woodwork
 		// loop through all games of a given team, add-up woodwork add to hashmaps
