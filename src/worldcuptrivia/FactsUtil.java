@@ -26,6 +26,9 @@ public class FactsUtil {
 		return map;
 	}
 	
+	public getFactMap() {
+		
+	}
 	//TODO replicate and adapt get keys logic from airplane example?
 
 }
