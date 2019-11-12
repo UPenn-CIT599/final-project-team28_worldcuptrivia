@@ -1,3 +1,5 @@
+// sources: https://github.com/alexa/skill-sample-java-fact
+
 package com.amazon.ask.airplanefacts;
 
 import com.amazon.ask.Skill;
