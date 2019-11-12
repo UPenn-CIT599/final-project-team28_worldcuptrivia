@@ -7,7 +7,7 @@ package worldcuptrivia;
 import java.util.ArrayList;
 
 public class SoccerAnalysis {
-	
+
 	// instance variables
 	ArrayList<Game> games;
 
@@ -18,6 +18,7 @@ public class SoccerAnalysis {
 
 	/**
 	 * This method computes the game with the most goals
+	 * 
 	 * @param someGames an ArrayList of Games objects
 	 * @return the id of the game with the most goals
 	 */
@@ -28,10 +29,11 @@ public class SoccerAnalysis {
 		// return the game id for the game with max goals
 		// TODO write a unit test, number of goals should be in reasonable range (0-20)
 		return id;
-		}
-	
+	}
+
 	/**
 	 * This method computes the team with the most goals
+	 * 
 	 * @param someGames an ArrayList of Games objects
 	 * @return the name of the team with the most goals
 	 */
@@ -41,10 +43,11 @@ public class SoccerAnalysis {
 		// loop through all games of a given team, add-up goals for add to hashmaps
 		// return the team name for the team with most goals
 		return team;
-		}
-	
+	}
+
 	/**
 	 * This method computes the team with least goals against
+	 * 
 	 * @param someGames an ArrayList of Games objects
 	 * @return the name of the team with the least goals against
 	 */
@@ -54,10 +57,11 @@ public class SoccerAnalysis {
 		// loop through all games of a given team, add-up goals against add to hashmaps
 		// return the team name for the team with least goals
 		return team;
-		}
-	
+	}
+
 	/**
 	 * This method computes team you should see if you want to see woodwork
+	 * 
 	 * @param someGames an ArrayList of Games objects
 	 * @return the team name
 	 */
@@ -67,10 +71,11 @@ public class SoccerAnalysis {
 		// loop through all games of a given team, add-up woodwork add to hashmaps
 		// return the team name for the team with most woodwork
 		return team;
-		}
-	
+	}
+
 	/**
 	 * This method computes team you should see if you want to see red cards
+	 * 
 	 * @param someGames an ArrayList of Games objects
 	 * @return the team name
 	 */
@@ -80,6 +85,6 @@ public class SoccerAnalysis {
 		// loop through all games of a given team, add-up redcards add to hashmaps
 		// return the team name for the team with most red cards
 		return team;
-		}
+	}
 
 }
