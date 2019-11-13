@@ -1,6 +1,7 @@
 package worldcuptrivia;
 
 public class OffensiveData {
+	// instance variables
 	private int totalPenaltyShots;
 	private int totalAttempts;
 	private int totalOnTarget;
@@ -10,6 +11,7 @@ public class OffensiveData {
 	private int totalCorners;
 	private int totalOffsides;
 
+	// constructor
 	public OffensiveData(int totalPenaltyShots, int totalAttempts, int totalOnTarget, int totalOffTarget,
 			int totalBlocked, int totalWoodwork, int totalCorners, int totalOffsides) {
 		this.totalPenaltyShots = totalPenaltyShots;

@@ -1,6 +1,8 @@
 package worldcuptrivia;
 
+
 public class Game {
+	// instance variables
 	private int gameNum;
 	private Team team1;
 	private Team team2;
@@ -15,6 +17,7 @@ public class Game {
 	private DefensiveData defensiveData;
 	private FoulData foulData;
 
+	// constructor
 	public Game(int gameNum, Team team1, Team team2, int team1Score, int team2Score, int totalPasses,
 			int totalPassesCompleted, int totalDistanceCovered, OffensiveData offensiveData,
 			DefensiveData defensiveData, FoulData foulData) {

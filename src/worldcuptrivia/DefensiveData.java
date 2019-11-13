@@ -1,11 +1,13 @@
 package worldcuptrivia;
 
 public class DefensiveData {
+	// instance variables
 	private int totalBallsRecovered;
 	private int totalTackles;
 	private int totalBlocks;
 	private int totalClearances;
 
+	// constructor
 	public DefensiveData(int totalBallsRecovered, int totalTackles, int totalBlocks, int totalClearances) {
 		this.totalBallsRecovered = totalBallsRecovered;
 		this.totalTackles = totalTackles;

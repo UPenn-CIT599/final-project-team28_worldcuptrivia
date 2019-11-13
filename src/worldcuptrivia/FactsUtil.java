@@ -26,7 +26,7 @@ public class FactsUtil {
 		return map;
 	}
 	
-	public getFactMap() {
+	public void getFactMap() {
 		
 	}
 	//TODO replicate and adapt get keys logic from airplane example?
