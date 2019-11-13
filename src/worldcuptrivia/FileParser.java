@@ -7,10 +7,12 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class FileParser {
+	// Instance variables
 	private String fileName;
-	private HashMap<String, Team> teams;
-	private HashMap<Integer, Game> games;
+	public HashMap<String, Team> teams;
+	public HashMap<Integer, Game> games;
 
+	// Constructor
 	public FileParser(String fileName) {
 		this.fileName = fileName;
 		teams = new HashMap<String, Team>();
@@ -18,6 +20,9 @@ public class FileParser {
 		run();
 	}
 
+	/**
+	 * Parses data set and creates corresponding objects.
+	 */
 	private void run() {
 		try {
 			Scanner inputScanner = new Scanner(new File(fileName));

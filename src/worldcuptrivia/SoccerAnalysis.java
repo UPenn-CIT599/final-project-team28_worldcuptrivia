@@ -55,7 +55,6 @@ public class SoccerAnalysis {
 		return id;
 	}
 
-
 	/**
 	 * This method computes the team with least goals against
 	 * 
