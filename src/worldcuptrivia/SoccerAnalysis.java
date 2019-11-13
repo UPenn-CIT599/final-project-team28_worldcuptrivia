@@ -5,15 +5,39 @@
 package worldcuptrivia;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class SoccerAnalysis {
 
 	// instance variables
 	ArrayList<Game> games;
+	FileParser data;
 
 	// constructor
 	public SoccerAnalysis(ArrayList<Game> someGames) {
 		this.games = someGames;
+		data = new FileParser("MatchStats.csv");
+	}
+
+	/**
+	 * This method computes the team that scored the most goals.
+	 * 
+	 * @return A string declaring the team and number of goals.
+	 */
+	public String teamWithMostGoals() {
+		ArrayList<String> teams = new ArrayList<>();
+		ArrayList<Integer> goalsScored = new ArrayList<>();
+
+		for (String team : data.teams.keySet()) {
+			teams.add(data.teams.get(team).getName());
+			goalsScored.add(data.teams.get(team).getTotalGoalsFor());
+		}
+
+		String teamWithMostGoals = "The team with the most goals was "
+				+ teams.get(goalsScored.indexOf(Collections.max(goalsScored))) + " with "
+				+ goalsScored.get(Collections.max(goalsScored)) + ".";
+
+		return teamWithMostGoals;
 	}
 
 	/**
