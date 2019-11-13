@@ -55,19 +55,6 @@ public class SoccerAnalysis {
 		return id;
 	}
 
-	/**
-	 * This method computes the team with the most goals
-	 * 
-	 * @param someGames an ArrayList of Games objects
-	 * @return the name of the team with the most goals
-	 */
-	public String bestOffense(ArrayList<Game> someGames) {
-		String team = null;
-		// create a hashmap for teams and total goals
-		// loop through all games of a given team, add-up goals for add to hashmaps
-		// return the team name for the team with most goals
-		return team;
-	}
 
 	/**
 	 * This method computes the team with least goals against
