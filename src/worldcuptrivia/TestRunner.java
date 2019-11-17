@@ -28,12 +28,13 @@ public class TestRunner {
 		System.out.println(sa.teamWithMostGoals());
 		System.out.println(sa.gameWithMostGoals());
 		System.out.println(sa.bestDefense());
-		for (Team current : sa.teams.values()) {
-			System.out.println(current.getName() + " goals against: " + current.getTotalGoalsAgainst());
-			System.out.println(current.getName() + " wins: " + current.getTotalWins());
-			System.out.println(current.getName() + " draws: " + current.getTotalDraws());
-			System.out.println(current.getName() + " losses: " + current.getTotalLosses());
-		}
+		System.out.println(sa.mostViolent());
+//		for (Team current : sa.teams.values()) {
+//			System.out.println(current.getName() + " goals against: " + current.getTotalGoalsAgainst());
+//			System.out.println(current.getName() + " wins: " + current.getTotalWins());
+//			System.out.println(current.getName() + " draws: " + current.getTotalDraws());
+//			System.out.println(current.getName() + " losses: " + current.getTotalLosses());
+//		}
 		
 	}
 

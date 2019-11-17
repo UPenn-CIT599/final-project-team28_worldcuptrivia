@@ -113,16 +113,26 @@ public class SoccerAnalysis {
 
 	/**
 	 * This method computes team you should see if you want to see red cards
-	 * 
-	 * @param someGames an ArrayList of Games objects
 	 * @return the team name
 	 */
-	public String mostViolent(ArrayList<Game> someGames) {
-		String team = null;
-		// create a hashmap for teams and total red cards
-		// loop through all games of a given team, add-up redcards add to hashmaps
-		// return the team name for the team with most red cards
-		return team;
+	public String mostViolent() {
+		// inititalize variables
+		String answer = null;
+		int numberofRedCards = 0;
+		Team mostViolentTeam = null;
+		// looping over games and comparing to current max
+		for (Team current : teams.values()) {
+			if ( current.getFoulData().getTotalRedCards() > numberofRedCards) {
+				numberofRedCards = current.getFoulData().getTotalRedCards();
+				mostViolentTeam = current;
+			}
+		}
+		// update and return the answer
+		answer = "The most violent team was " + mostViolentTeam.getName() +
+				 " with "	+ numberofRedCards + " red card(s).";
+		return answer;
+		// TODO write test
+		// TODO handle multiple anwsers 
 	}
 
 }
