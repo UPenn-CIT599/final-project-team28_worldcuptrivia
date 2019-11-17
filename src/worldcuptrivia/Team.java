@@ -1,8 +1,8 @@
 package worldcuptrivia;
 
 public class Team {
-	
-	// instance variables
+
+	// Instance variables
 	private String name;
 
 	private int totalWins;
@@ -12,23 +12,24 @@ public class Team {
 	private int totalGoalsFor;
 	private int totalGoalsAgainst;
 
-	private int totalBallPossession; // total percentage, should be divided by total num games to get true average
+	private int totalBallPossession; // Total percentage, should be divided by total num games to get true average
 	private int totalPasses;
 	private int totalPassesCompleted;
-	private int totalDistanceCovered; // in km
+	private int totalDistanceCovered; // In km
 
 	private OffensiveData offensiveData;
 	private DefensiveData defensiveData;
 	private FoulData foulData;
 
-	// constructor
-	public Team(String name, int totalWins, int totalDraws, int totalLosses, int totalGoalsFor, int totalGoalsAgainst,
-			int totalBallPossession, int totalPasses, int totalPassesCompleted, int totalDistanceCovered,
-			OffensiveData offensiveData, DefensiveData defensiveData, FoulData foulData) {
+	// Constructor
+	public Team(String name, char gameResult, int totalGoalsFor, int totalGoalsAgainst, int totalBallPossession,
+			int totalPasses, int totalPassesCompleted, int totalDistanceCovered, OffensiveData offensiveData,
+			DefensiveData defensiveData, FoulData foulData) {
 		this.name = name;
-		this.totalWins = totalWins;
-		this.totalDraws = totalDraws;
-		this.totalLosses = totalLosses;
+		this.totalWins = 0;
+		this.totalDraws = 0;
+		this.totalLosses = 0;
+		addGameResult(gameResult);
 		this.totalGoalsFor = totalGoalsFor;
 		this.totalGoalsAgainst = totalGoalsAgainst;
 		this.totalBallPossession = totalBallPossession;
@@ -38,6 +39,70 @@ public class Team {
 		this.offensiveData = offensiveData;
 		this.defensiveData = defensiveData;
 		this.foulData = foulData;
+	}
+
+	/**
+	 * Method to compute team's total number of games
+	 * 
+	 * @return
+	 */
+	public int getTotalNumGames() {
+		return totalWins + totalLosses + totalDraws;
+	}
+
+	/**
+	 * Method to categorize game as win, loss, or draw
+	 * 
+	 * @param result
+	 */
+	public void addGameResult(char result) {
+		if (result == 'W') {
+			totalWins++;
+		} else if (result == 'L') {
+			totalLosses++;
+		} else {
+			totalDraws++;
+		}
+	}
+
+	public void addGoalsFor(int amount) {
+		totalGoalsFor += amount;
+	}
+
+	public void addGoalsAgainst(int amount) {
+		totalGoalsAgainst += amount;
+	}
+
+	public void addBallPossession(int amount) {
+		totalBallPossession += amount;
+	}
+
+	public void addPasses(int amount) {
+		totalPasses += amount;
+	}
+
+	public void addPassesCompleted(int amount) {
+		totalPassesCompleted += amount;
+	}
+
+	public void addDistanceCovered(int amount) {
+		totalDistanceCovered += amount;
+	}
+
+	public void addOffensiveData(OffensiveData data) {
+		offensiveData = offensiveData.merge(data);
+	}
+
+	public void addDefensiveData(DefensiveData data) {
+		defensiveData = defensiveData.merge(data);
+	}
+
+	public void addFoulData(FoulData data) {
+		foulData = foulData.merge(data);
+	}
+
+	public double getAverageDistance() {
+		return (double) totalDistanceCovered / getTotalNumGames();
 	}
 
 	public String getName() {

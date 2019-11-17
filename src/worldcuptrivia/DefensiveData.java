@@ -1,13 +1,13 @@
 package worldcuptrivia;
 
 public class DefensiveData {
-	// instance variables
+	// Instance variables
 	private int totalBallsRecovered;
 	private int totalTackles;
 	private int totalBlocks;
 	private int totalClearances;
 
-	// constructor
+	// Constructor
 	public DefensiveData(int totalBallsRecovered, int totalTackles, int totalBlocks, int totalClearances) {
 		this.totalBallsRecovered = totalBallsRecovered;
 		this.totalTackles = totalTackles;
@@ -15,6 +15,20 @@ public class DefensiveData {
 		this.totalClearances = totalClearances;
 	}
 
+	/**
+	 * Method for calculating cumulative defensive data
+	 * @param data
+	 * @return
+	 */
+	public DefensiveData merge(DefensiveData data)
+	{
+		int ballsRecovered = totalBallsRecovered + data.getTotalBallsRecovered();
+		int tackles = totalTackles + data.getTotalTackles();
+		int blocks = totalBlocks + data.getTotalBlocks();
+		int clearances = totalClearances + data.getTotalClearances();
+		return new DefensiveData(ballsRecovered, tackles, blocks, clearances);
+	}
+	
 	public int getTotalBallsRecovered() {
 		return totalBallsRecovered;
 	}

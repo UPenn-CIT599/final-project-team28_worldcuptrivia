@@ -1,8 +1,7 @@
 package worldcuptrivia;
 
 public class OffensiveData {
-	// instance variables
-	private int totalPenaltyShots;
+	// Instance variables
 	private int totalAttempts;
 	private int totalOnTarget;
 	private int totalOffTarget;
@@ -11,10 +10,9 @@ public class OffensiveData {
 	private int totalCorners;
 	private int totalOffsides;
 
-	// constructor
-	public OffensiveData(int totalPenaltyShots, int totalAttempts, int totalOnTarget, int totalOffTarget,
-			int totalBlocked, int totalWoodwork, int totalCorners, int totalOffsides) {
-		this.totalPenaltyShots = totalPenaltyShots;
+	// Constructor
+	public OffensiveData(int totalAttempts, int totalOnTarget, int totalOffTarget, int totalBlocked, int totalWoodwork,
+			int totalCorners, int totalOffsides) {
 		this.totalAttempts = totalAttempts;
 		this.totalOnTarget = totalOnTarget;
 		this.totalOffTarget = totalOffTarget;
@@ -24,12 +22,21 @@ public class OffensiveData {
 		this.totalOffsides = totalOffsides;
 	}
 
-	public int getTotalPenaltyShots() {
-		return totalPenaltyShots;
-	}
-
-	public void setTotalPenaltyShots(int totalPenaltyShots) {
-		this.totalPenaltyShots = totalPenaltyShots;
+	/**
+	 * Method for calculating cumulative offensive data
+	 * 
+	 * @param data
+	 * @return
+	 */
+	public OffensiveData merge(OffensiveData data) {
+		int attempts = totalAttempts + data.getTotalAttempts();
+		int onTarget = totalOnTarget + data.getTotalOnTarget();
+		int offTarget = totalOffTarget + data.getTotalOffTarget();
+		int blocked = totalBlocked + data.getTotalBlocked();
+		int woodwork = totalWoodwork + data.getTotalWoodwork();
+		int corners = totalCorners + data.getTotalCorners();
+		int offsides = totalOffsides + data.getTotalOffsides();
+		return new OffensiveData(attempts, onTarget, offTarget, blocked, woodwork, corners, offsides);
 	}
 
 	public int getTotalAttempts() {

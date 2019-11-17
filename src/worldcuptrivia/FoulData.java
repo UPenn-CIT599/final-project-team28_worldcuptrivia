@@ -1,18 +1,32 @@
 package worldcuptrivia;
 
 public class FoulData {
-	// instance variables
+	// Instance variables
 	private int totalYellowCards;
 	private int totalRedCards;
 	private int totalSecondYellowCards;
 	private int totalFouls;
 
-	// constructor
+	// Constructor
 	public FoulData(int totalYellowCards, int totalRedCards, int totalSecondYellowCards, int totalFouls) {
 		this.totalYellowCards = totalYellowCards;
 		this.totalRedCards = totalRedCards;
 		this.totalSecondYellowCards = totalSecondYellowCards;
 		this.totalFouls = totalFouls;
+	}
+
+	/**
+	 * Method for calculating cumulative foul data
+	 * 
+	 * @param data
+	 * @return
+	 */
+	public FoulData merge(FoulData data) {
+		int yellowCards = totalYellowCards + data.getTotalYellowCards();
+		int redCards = totalRedCards + data.getTotalRedCards();
+		int secondYellowCards = totalSecondYellowCards + data.getTotalSecondYellowCards();
+		int fouls = totalFouls + data.getTotalFouls();
+		return new FoulData(yellowCards, redCards, secondYellowCards, fouls);
 	}
 
 	public int getTotalYellowCards() {
