@@ -103,13 +103,25 @@ public class SoccerAnalysis {
 	 * @param someGames an ArrayList of Games objects
 	 * @return the team name
 	 */
-	public String mostWoodWork(ArrayList<Game> someGames) {
-		String team = null;
-		// create a hashmap for teams and total woodwork
-		// loop through all games of a given team, add-up woodwork add to hashmaps
-		// return the team name for the team with most woodwork
-		return team;
+	public String mostWoodWork() {
+		// initialize the method
+		int woodWork = 0;
+		Team teamWithMostWoodWork = null;
+		String answer;
+		// looping over goals and comparing to current max
+		for (Team current : teams.values()) {
+			if (current.getOffensiveData().getTotalWoodwork() > woodWork) {
+				teamWithMostWoodWork = current;
+				woodWork = current.getOffensiveData().getTotalWoodwork();
+			}
+		}
+		// update and return the answer
+		answer = "The team with the most woodwork was " + teamWithMostWoodWork.getName() + " with "
+				+ woodWork + " hits.";
+		return answer;
 	}
+	// TODO test + multiple results
+	
 
 	/**
 	 * This method computes team you should see if you want to see red cards
@@ -129,7 +141,7 @@ public class SoccerAnalysis {
 		}
 		// update and return the answer
 		answer = "The most violent team was " + mostViolentTeam.getName() +
-				 " with "	+ numberofRedCards + " red card(s).";
+				" with "	+ numberofRedCards + " red card(s).";
 		return answer;
 		// TODO write test
 		// TODO handle multiple anwsers 

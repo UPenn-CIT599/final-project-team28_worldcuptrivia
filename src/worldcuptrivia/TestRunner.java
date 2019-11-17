@@ -29,6 +29,7 @@ public class TestRunner {
 		System.out.println(sa.gameWithMostGoals());
 		System.out.println(sa.bestDefense());
 		System.out.println(sa.mostViolent());
+		System.out.println(sa.mostWoodWork());
 //		for (Team current : sa.teams.values()) {
 //			System.out.println(current.getName() + " goals against: " + current.getTotalGoalsAgainst());
 //			System.out.println(current.getName() + " wins: " + current.getTotalWins());
