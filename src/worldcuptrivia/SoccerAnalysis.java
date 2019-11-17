@@ -1,6 +1,6 @@
 /**
  * This will be the main analysis class
-**/
+ **/
 
 package worldcuptrivia;
 
@@ -27,17 +27,18 @@ public class SoccerAnalysis {
 	 * @return A string declaring the team and number of goals.
 	 */
 	public String teamWithMostGoals() {
+		// initialize the method
 		int goalsFor = 0;
 		Team teamWithMostGoals = null;
 		String answer;
-
+		// looping over goals and comparing to current max
 		for (Team current : teams.values()) {
 			if (current.getTotalGoalsFor() > goalsFor) {
 				teamWithMostGoals = current;
 				goalsFor = current.getTotalGoalsFor();
 			}
 		}
-
+		// update and return the answer
 		answer = "The team with the most goals was " + teamWithMostGoals.getName() + " with "
 				+ teamWithMostGoals.getTotalGoalsFor() + ".";
 		return answer;
@@ -46,30 +47,54 @@ public class SoccerAnalysis {
 	/**
 	 * This method computes the game with the most goals
 	 * 
-	 * @param someGames an ArrayList of Games objects
 	 * @return the id of the game with the most goals
 	 */
-	public String gameWithMostGoals(ArrayList<Game> someGames) {
-		String id = "";
-		// create a hashmap for games and total goals
-		// loop through all games, add-up goals for and against and add to hashmaps
-		// return the game id for the game with max goals
-		// TODO write a unit test, number of goals should be in reasonable range (0-20)
-		return id;
+	public String gameWithMostGoals() {
+		// initialize the method
+		int goalsInGame = 0;
+		Game gameWithMostGoals = null;
+		String answer;
+		// looping over games and comparing to current max
+		for (Game current : games.values()) {
+			if ((current.getTeam1Score() + current.getTeam2Score()) > goalsInGame) {
+				gameWithMostGoals = current;
+				goalsInGame = (current.getTeam1Score() + current.getTeam2Score());
+			}
+		}
+		// update and return the answer
+		answer = "The game with the most goals was " + gameWithMostGoals.getTeam1().getName() +
+				" versus " + gameWithMostGoals.getTeam2().getName() + " with "	+ goalsInGame + " goals.";
+		return answer;
+		// TODO write a unit test
+		// TODO handle multiple answers
 	}
 
+
 	/**
-	 * This method computes the team with least goals against
-	 * 
-	 * @param someGames an ArrayList of Games objects
+	 * This method computes the team with least goals against on
 	 * @return the name of the team with the least goals against
 	 */
-	public String bestDefense(ArrayList<Game> someGames) {
-		String team = null;
-		// create a hashmap for teams and total goals
-		// loop through all games of a given team, add-up goals against add to hashmaps
-		// return the team name for the team with least goals
-		return team;
+	public String bestDefense() {
+		// initialize variables
+		double goalsAgainstPerGame = 100.0;
+		Team teamWithBestDefense = null;
+		String answer;
+		double currentGoalsAgainstPerGame = 100.0;
+		// loop over teams
+		// looping over goals per game and comparing to current min
+		for (Team current : teams.values()) {
+			currentGoalsAgainstPerGame = (float)current.getTotalGoalsAgainst() 
+					/ (float)(current.getTotalLosses() + current.getTotalDraws() + current.getTotalWins());
+			if (currentGoalsAgainstPerGame < goalsAgainstPerGame) {
+				teamWithBestDefense = current;
+				goalsAgainstPerGame = currentGoalsAgainstPerGame;
+			}
+		}
+		// update and return the answer
+		answer = "The team with the best defense was " + teamWithBestDefense.getName() + " with "
+				+ goalsAgainstPerGame + ".";
+		return answer;
+		// TODO write unit test
 	}
 
 	/**
