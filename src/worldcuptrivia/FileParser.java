@@ -8,8 +8,8 @@ import java.util.Scanner;
 public class FileParser {
 	// Instance variables
 	private String fileName;
-	public HashMap<String, Team> teams;
-	public HashMap<Integer, Game> games;
+	private HashMap<String, Team> teams;
+	private HashMap<Integer, Game> games;
 
 	// Constructor
 	public FileParser(String fileName) {

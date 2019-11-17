@@ -5,18 +5,20 @@
 package worldcuptrivia;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.HashMap;
 
 public class SoccerAnalysis {
 
-	// instance variables
-	ArrayList<Game> games;
+	// Instance variables
 	FileParser data;
+	HashMap<Integer, Game> games;
+	HashMap<String, Team> teams;
 
-	// constructor
-	public SoccerAnalysis(ArrayList<Game> someGames) {
-		this.games = someGames;
+	// Constructor
+	public SoccerAnalysis() {
 		data = new FileParser("MatchStats.csv");
+		games = data.getGames();
+		teams = data.getTeams();
 	}
 
 	/**
@@ -25,19 +27,20 @@ public class SoccerAnalysis {
 	 * @return A string declaring the team and number of goals.
 	 */
 	public String teamWithMostGoals() {
-		ArrayList<String> teams = new ArrayList<>();
-		ArrayList<Integer> goalsScored = new ArrayList<>();
+		int goalsFor = 0;
+		Team teamWithMostGoals = null;
+		String answer;
 
-		for (String team : data.teams.keySet()) {
-			teams.add(data.teams.get(team).getName());
-			goalsScored.add(data.teams.get(team).getTotalGoalsFor());
+		for (Team current : teams.values()) {
+			if (current.getTotalGoalsFor() > goalsFor) {
+				teamWithMostGoals = current;
+				goalsFor = current.getTotalGoalsFor();
+			}
 		}
 
-		String teamWithMostGoals = "The team with the most goals was "
-				+ teams.get(goalsScored.indexOf(Collections.max(goalsScored))) + " with "
-				+ goalsScored.get(Collections.max(goalsScored)) + ".";
-
-		return teamWithMostGoals;
+		answer = "The team with the most goals was " + teamWithMostGoals.getName() + " with "
+				+ teamWithMostGoals.getTotalGoalsFor() + ".";
+		return answer;
 	}
 
 	/**
