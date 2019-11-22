@@ -7,23 +7,23 @@ import com.amazon.ask.Skills;
 import com.amazon.ask.SkillStreamHandler;
 import com.amazon.ask.airplanefacts.handlers.*;
 
-public class AirplaneFactsStreamHandler extends SkillStreamHandler {
+public class WorldCupTriviaStreamHandler extends SkillStreamHandler {
 
     private static Skill getSkill() {
         return Skills.standard()
                 .addRequestHandlers(
-                        new CancelandStopIntentHandler(),
-                        new FactIntentHandler(),
-                        new HelpIntentHandler(),
-                        new LaunchRequestHandler(),
-                        new SessionEndedRequestHandler(),
-                        new FallBackIntentHandler())
+                        new AlexaHandlerCancel(),
+                        new AlexaHandlerFact(),
+                        new AlexaHandlerHelp(),
+                        new AlexaHandlerLaunch(),
+                        new AlexaHandlerEnd(),
+                        new AlexaHandlerFallback())
                 // Add your skill id below and uncomment to enable skill ID verification
                 // .withSkillId("")
                 .build();
     }
 
-    public AirplaneFactsStreamHandler() {
+    public WorldCupTriviaStreamHandler() {
         super(getSkill());
     }
 
