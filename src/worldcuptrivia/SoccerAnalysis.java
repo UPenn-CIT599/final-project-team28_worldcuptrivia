@@ -16,7 +16,7 @@ public class SoccerAnalysis {
 
 	// Constructor
 	public SoccerAnalysis() {
-		data = new FileParser("MatchStats.csv");
+		data = new FileParser("https://gitlab.com/djh_or/2018-world-cup-stats/raw/master/world_cup_2018_stats.csv");
 		games = data.getGames();
 		teams = data.getTeams();
 	}
@@ -82,7 +82,6 @@ public class SoccerAnalysis {
 					+ gameWithMostGoals.get(0).getTeam2().getName() + ". It had " + theMostGoals + " goals!";
 			return answer;
 		}
-		// TODO write a unit test
 	}
 
 	/**

@@ -1,7 +1,7 @@
 package worldcuptrivia;
 
-import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -24,7 +24,7 @@ public class FileParser {
 	 */
 	private void run() {
 		try {
-			Scanner inputScanner = new Scanner(new File(fileName));
+			Scanner inputScanner = new Scanner(new URL(fileName).openStream());
 			inputScanner.nextLine(); // Skip first row of column names
 			while (inputScanner.hasNextLine()) {
 				String[] elements1 = inputScanner.nextLine().split(",");
@@ -135,6 +135,7 @@ public class FileParser {
 
 	/**
 	 * Method for adding teams to HashMap based on parsed data
+	 * 
 	 * @param name
 	 * @param gameResult
 	 * @param goalsFor
