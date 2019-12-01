@@ -71,8 +71,13 @@ public class SoccerAnalysis {
 			StringBuilder builder = new StringBuilder();
 			builder.append("The games with the most goals were:");
 			for (int i = 0; i < gameWithMostGoals.size(); i++) {
-				builder.append("\n" + gameWithMostGoals.get(i).getTeam1().getName() + " versus "
-						+ gameWithMostGoals.get(i).getTeam2().getName() + ".");
+				if (gameWithMostGoals.size() > 1 && i == gameWithMostGoals.size() - 1) {
+					builder.append("\n" + "and " + gameWithMostGoals.get(i).getTeam1().getName() + " versus "
+							+ gameWithMostGoals.get(i).getTeam2().getName() + ".");
+				} else {
+					builder.append("\n" + gameWithMostGoals.get(i).getTeam1().getName() + " versus "
+							+ gameWithMostGoals.get(i).getTeam2().getName() + ".");
+				}
 			}
 			builder.append("\nThey all had " + theMostGoals + " goals!");
 			String multiAnswer = builder.toString();
@@ -107,9 +112,8 @@ public class SoccerAnalysis {
 		}
 		// update and return the answer
 		answer = "The team with the best defense was " + teamWithBestDefense.getName() + " with " + goalsAgainstPerGame
-				+ ".";
+				+ " goals conceded per game.";
 		return answer;
-		// TODO write unit test
 	}
 
 	/**
@@ -119,23 +123,43 @@ public class SoccerAnalysis {
 	 * @return the team name
 	 */
 	public String mostWoodWork() {
-		// initialize the method
-		int woodWork = 0;
-		Team teamWithMostWoodWork = null;
-		String answer;
-		// looping over goals and comparing to current max
+		// Initialize the method
+		ArrayList<Team> teamsWithMostWoodwork = new ArrayList<Team>();
+		int theMostWoodwork = 0;
+		String answer = "";
+
+		// Loop through teams and fill ArrayList with those that had the most shots
+		// hitting woodwork
 		for (Team current : teams.values()) {
-			if (current.getOffensiveData().getTotalWoodwork() > woodWork) {
-				teamWithMostWoodWork = current;
-				woodWork = current.getOffensiveData().getTotalWoodwork();
+			if (current.getOffensiveData().getTotalWoodwork() > theMostWoodwork) {
+				teamsWithMostWoodwork.clear();
+				teamsWithMostWoodwork.add(current);
+				theMostWoodwork = current.getOffensiveData().getTotalWoodwork();
+			} else if (current.getOffensiveData().getTotalWoodwork() == theMostWoodwork) {
+				teamsWithMostWoodwork.add(current);
 			}
 		}
-		// update and return the answer
-		answer = "The team with the most woodwork was " + teamWithMostWoodWork.getName() + " with " + woodWork
-				+ " hits.";
-		return answer;
+
+		// Returns string with answer depending on if one or multiple teams
+		if (teamsWithMostWoodwork.size() > 1) {
+			StringBuilder builder = new StringBuilder();
+			builder.append("The teams with the most shots hitting woodwork were:");
+			for (int i = 0; i < teamsWithMostWoodwork.size(); i++) {
+				if (teamsWithMostWoodwork.size() > 1 && i == teamsWithMostWoodwork.size() - 1) {
+					builder.append("\n" + "and " + teamsWithMostWoodwork.get(i).getName() + ".");
+				} else {
+					builder.append("\n" + teamsWithMostWoodwork.get(i).getName() + ".");
+				}
+			}
+			builder.append("\nThey all had " + theMostWoodwork + " shots that hit woodwork!");
+			String multiAnswer = builder.toString();
+			return multiAnswer;
+		} else {
+			answer = "The team with the most shots hitting woodwork was: " + teamsWithMostWoodwork.get(0).getName()
+					+ ". They had " + theMostWoodwork + " shots that hit woodwork!";
+			return answer;
+		}
 	}
-	// TODO test + multiple results
 
 	/**
 	 * This method computes team you should see if you want to see red cards
@@ -143,23 +167,49 @@ public class SoccerAnalysis {
 	 * @return the team name
 	 */
 	public String mostViolent() {
-		// inititalize variables
-		String answer = null;
-		int numberofRedCards = 0;
-		Team mostViolentTeam = null;
-		// looping over games and comparing to current max
+		// Initialize the method
+		ArrayList<Team> teamsWithMostRedCards = new ArrayList<Team>();
+		int theMostRedCards = 0;
+		String answer = "";
+
+		// Loop through teams and fill ArrayList with those that had the most red cards
 		for (Team current : teams.values()) {
-			if (current.getFoulData().getTotalRedCards() > numberofRedCards) {
-				numberofRedCards = current.getFoulData().getTotalRedCards();
-				mostViolentTeam = current;
+			if (current.getFoulData().getTotalRedCards() > theMostRedCards) {
+				teamsWithMostRedCards.clear();
+				teamsWithMostRedCards.add(current);
+				theMostRedCards = current.getFoulData().getTotalRedCards();
+			} else if (current.getFoulData().getTotalRedCards() == theMostRedCards) {
+				teamsWithMostRedCards.add(current);
 			}
 		}
-		// update and return the answer
-		answer = "The most violent team was " + mostViolentTeam.getName() + " with " + numberofRedCards
-				+ " red card(s).";
-		return answer;
-		// TODO write test
-		// TODO handle multiple anwsers
-	}
 
+		// Returns string with answer depending on if one or multiple teams
+		if (teamsWithMostRedCards.size() > 1) {
+			StringBuilder builder = new StringBuilder();
+			builder.append("The teams with the most red cards were:");
+			for (int i = 0; i < teamsWithMostRedCards.size(); i++) {
+				if (teamsWithMostRedCards.size() > 1 && i == teamsWithMostRedCards.size() - 1) {
+					builder.append("\n" + "and " + teamsWithMostRedCards.get(i).getName() + ".");
+				} else {
+					builder.append("\n" + teamsWithMostRedCards.get(i).getName() + ".");
+				}
+			}
+			if (theMostRedCards == 1) {
+				builder.append("\nThey all had " + theMostRedCards + " red card.");
+			} else if (theMostRedCards > 1) {
+				builder.append("\nThey all had " + theMostRedCards + " red cards.");
+			}
+			String multiAnswer = builder.toString();
+			return multiAnswer;
+		} else {
+			if (theMostRedCards == 1) {
+				answer = "The team with the most red cards was: " + teamsWithMostRedCards.get(0).getName()
+						+ ". They had " + theMostRedCards + " red card.";
+			} else if (theMostRedCards > 1) {
+				answer = "The team with the most red cards was: " + teamsWithMostRedCards.get(0).getName()
+						+ ". They had " + theMostRedCards + " red cards.";
+			}
+			return answer;
+		}
+	}
 }
