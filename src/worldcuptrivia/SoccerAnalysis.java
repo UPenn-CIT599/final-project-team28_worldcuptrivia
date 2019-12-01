@@ -16,7 +16,7 @@ public class SoccerAnalysis {
 
 	// Constructor
 	public SoccerAnalysis() {
-		data = new FileParser("https://gitlab.com/djh_or/2018-world-cup-stats/raw/master/world_cup_2018_stats.csv");
+		data = new FileParser("https://cit591-public.s3.amazonaws.com/MatchStats.csv");
 		games = data.getGames();
 		teams = data.getTeams();
 	}

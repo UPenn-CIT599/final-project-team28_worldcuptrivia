@@ -4,7 +4,7 @@ public class TestRunner {
 
 	public static void main(String[] args) {
 		FileParser fp = new FileParser(
-				"https://gitlab.com/djh_or/2018-world-cup-stats/raw/master/world_cup_2018_stats.csv");
+				"https://cit591-public.s3.amazonaws.com/MatchStats.csv");
 		System.out.println(fp.getGames().get(1).getTeam1().getName());
 		System.out.println(fp.getGames().get(1).getTeam1().getTotalGoalsFor());
 		System.out.println(fp.getGames().get(1).getTeam1Score());
