@@ -10,10 +10,14 @@ public class FactsUtil {
     public static Map getFactMap() {
         Map<String, String> map = new HashMap<>();
         map.put("MostGoals", "The team with the most goals was Belgium with 16.");
-        map.put("GameWithMostGoals", "The game with most goals was X versu Y, with Z goals.");
-        map.put("BestDefense", "The team with the best defense was X with an average of Y goals against per game.");
-        map.put("MostWoodWork", "The team that hit the most posts was X with Y hits.");
-        map.put("MostViolent", "The team with the most red cards was X with Y red cards.");
+        map.put("GameWithMostGoals", "The games with the most goals were: Belgium versus Tunisia."
+        		+ "England versus Panama. and France versus Argentina. They all had 7 goals!");
+        map.put("BestDefense", "The team with the best defense was Denmark with 0.5 goals "
+        		+ "conceded per game.");
+        map.put("MostWoodWork", "The team with the most shots hitting woodwork was: Croatia. "
+        		+ "They had 4 shots that hit woodwork!");
+        map.put("MostViolent", "The teams with the most red cards were: Colombia. and Switzerland. "
+        		+ "They all had 1 red card.");
         return map;
     }
 
