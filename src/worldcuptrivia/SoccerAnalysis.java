@@ -47,31 +47,47 @@ public class SoccerAnalysis {
 	/**
 	 * This method computes the game with the most goals
 	 * 
-	 * @return the id of the game with the most goals
+	 * @return string listing the game(s) with the most goals
 	 */
 	public String gameWithMostGoals() {
 		// initialize the method
-		int goalsInGame = 0;
-		Game gameWithMostGoals = null;
-		String answer;
-		// looping over games and comparing to current max
+		ArrayList<Game> gameWithMostGoals = new ArrayList<Game>();
+		int theMostGoals = 0;
+		String answer = "";
+
+		// loop through games and fill ArrayList with those that had the most goals
 		for (Game current : games.values()) {
-			if ((current.getTeam1Score() + current.getTeam2Score()) > goalsInGame) {
-				gameWithMostGoals = current;
-				goalsInGame = (current.getTeam1Score() + current.getTeam2Score());
+			if (current.getTeam1Score() + current.getTeam2Score() > theMostGoals) {
+				gameWithMostGoals.clear();
+				gameWithMostGoals.add(current);
+				theMostGoals = current.getTeam1Score() + current.getTeam2Score();
+			} else if (current.getTeam1Score() + current.getTeam2Score() == theMostGoals) {
+				gameWithMostGoals.add(current);
 			}
 		}
-		// update and return the answer
-		answer = "The game with the most goals was " + gameWithMostGoals.getTeam1().getName() +
-				" versus " + gameWithMostGoals.getTeam2().getName() + " with "	+ goalsInGame + " goals.";
-		return answer;
-		// TODO write a unit test
-		// TODO handle multiple answers
-	}
 
+		// returns string with answer depending on if one or multiple games
+		if (gameWithMostGoals.size() > 1) {
+			StringBuilder builder = new StringBuilder();
+			builder.append("The games with the most goals were:");
+			for (int i = 0; i < gameWithMostGoals.size(); i++) {
+				builder.append("\n" + gameWithMostGoals.get(i).getTeam1().getName() + " versus "
+						+ gameWithMostGoals.get(i).getTeam2().getName() + ".");
+			}
+			builder.append("\nThey all had " + theMostGoals + " goals!");
+			String multiAnswer = builder.toString();
+			return multiAnswer;
+		} else {
+			answer = "The game with the most goals was: " + gameWithMostGoals.get(0).getTeam1().getName() + " versus "
+					+ gameWithMostGoals.get(0).getTeam2().getName() + ". It had " + theMostGoals + " goals!";
+			return answer;
+		}
+		// TODO write a unit test
+	}
 
 	/**
 	 * This method computes the team with least goals against on
+	 * 
 	 * @return the name of the team with the least goals against
 	 */
 	public String bestDefense() {
@@ -83,16 +99,16 @@ public class SoccerAnalysis {
 		// loop over teams
 		// looping over goals per game and comparing to current min
 		for (Team current : teams.values()) {
-			currentGoalsAgainstPerGame = (float)current.getTotalGoalsAgainst() 
-					/ (float)(current.getTotalLosses() + current.getTotalDraws() + current.getTotalWins());
+			currentGoalsAgainstPerGame = (float) current.getTotalGoalsAgainst()
+					/ (float) (current.getTotalLosses() + current.getTotalDraws() + current.getTotalWins());
 			if (currentGoalsAgainstPerGame < goalsAgainstPerGame) {
 				teamWithBestDefense = current;
 				goalsAgainstPerGame = currentGoalsAgainstPerGame;
 			}
 		}
 		// update and return the answer
-		answer = "The team with the best defense was " + teamWithBestDefense.getName() + " with "
-				+ goalsAgainstPerGame + ".";
+		answer = "The team with the best defense was " + teamWithBestDefense.getName() + " with " + goalsAgainstPerGame
+				+ ".";
 		return answer;
 		// TODO write unit test
 	}
@@ -116,15 +132,15 @@ public class SoccerAnalysis {
 			}
 		}
 		// update and return the answer
-		answer = "The team with the most woodwork was " + teamWithMostWoodWork.getName() + " with "
-				+ woodWork + " hits.";
+		answer = "The team with the most woodwork was " + teamWithMostWoodWork.getName() + " with " + woodWork
+				+ " hits.";
 		return answer;
 	}
 	// TODO test + multiple results
-	
 
 	/**
 	 * This method computes team you should see if you want to see red cards
+	 * 
 	 * @return the team name
 	 */
 	public String mostViolent() {
@@ -134,17 +150,17 @@ public class SoccerAnalysis {
 		Team mostViolentTeam = null;
 		// looping over games and comparing to current max
 		for (Team current : teams.values()) {
-			if ( current.getFoulData().getTotalRedCards() > numberofRedCards) {
+			if (current.getFoulData().getTotalRedCards() > numberofRedCards) {
 				numberofRedCards = current.getFoulData().getTotalRedCards();
 				mostViolentTeam = current;
 			}
 		}
 		// update and return the answer
-		answer = "The most violent team was " + mostViolentTeam.getName() +
-				" with "	+ numberofRedCards + " red card(s).";
+		answer = "The most violent team was " + mostViolentTeam.getName() + " with " + numberofRedCards
+				+ " red card(s).";
 		return answer;
 		// TODO write test
-		// TODO handle multiple anwsers 
+		// TODO handle multiple anwsers
 	}
 
 }
