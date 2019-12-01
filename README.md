@@ -27,12 +27,8 @@ We will be inspired by the Agile software development approach, starting with co
 - Make a small change to the Skill (get Alexa to give "Harun & Pierre" instead of one of the airplane facts).
 See https://cit591-public.s3.amazonaws.com/alexa-tutorial.png
 
-3. Planning/CRC cards for core functions :construction:
+3. Planning/CRC cards for core functions :heavy_check_mark:
 - See our [repo wiki](https://github.com/UPenn-CIT599/final-project-team28_worldcuptrivia/wiki) for Design details
-4. Testing plan for core functions (TBD)
-5. Programming of core functions (TBD)
-6. UA, QA, Documentation & Shipping of Skill with core functions (TBD)
-7. Planning/CRC cards for stretch goals (TBD)
-8. Testing plan for stretch goals (TBD)
-9. Programming of stretch goals  (TBD)
-10. UA, QA, Documentation & Shipping of Skill with stretch goal features  (TBD)
+4. Testing plan for core functions (TBD) :construction:
+5. Programming of core functions (TBD) :construction:
+6. UA, QA, Documentation & Shipping of Skill with core functions (TBD) :construction:
