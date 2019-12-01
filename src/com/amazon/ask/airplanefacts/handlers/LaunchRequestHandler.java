@@ -1,5 +1,3 @@
-// sources: https://github.com/alexa/skill-sample-java-fact
-
 package com.amazon.ask.airplanefacts.handlers;
 
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
@@ -24,10 +22,10 @@ public class LaunchRequestHandler implements RequestHandler {
     @Override
     public Optional<Response> handle(HandlerInput input) {
 
-        String title = "Airplane Facts";
-        String primaryText = "Welcome to Airplane Facts.";
-        String secondaryText = "Would you like to hear an airplane fact?";
-        String speechText = "Welcome to Airplane Facts. I can tell you facts about popular airplanes. Would you like to hear an airplane fact?";
+        String title = "World Cup Trivia";
+        String primaryText = "Welcome to World Cup Trivia.";
+        String secondaryText = "Would you like to hear facts about the 2018 world cup?";
+        String speechText = "Welcome to World Cup Trivia. I can tell you facts about the 2018 world cup. Would you like to hear a world cup fact?";
         String imageUrl = "https://s3.amazonaws.com/ask-samples-resources/images/background-image.jpg";
 
         Image image = getImage(imageUrl);

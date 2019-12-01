@@ -1,5 +1,3 @@
-// sources: https://github.com/alexa/skill-sample-java-fact
-
 package com.amazon.ask.airplanefacts.handlers;
 
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;

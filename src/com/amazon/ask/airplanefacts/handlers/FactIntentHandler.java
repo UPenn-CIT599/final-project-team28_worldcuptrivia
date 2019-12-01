@@ -1,5 +1,3 @@
-// sources: https://github.com/alexa/skill-sample-java-fact
-
 package com.amazon.ask.airplanefacts.handlers;
 
 import com.amazon.ask.airplanefacts.util.FactsUtil;
@@ -34,11 +32,11 @@ public class FactIntentHandler implements RequestHandler {
         String key = keys.get(index);
         keys.remove(index);
 
-        String title = "Airplane Facts";
+        String title = "World Cup Trivia";
         String primaryText = facts.get(key);
         //FIXME: If you would like to display additional text, please set the secondary text accordingly
         String secondaryText = "";
-        String speechText = "<speak> " + primaryText + "<break time=\"1s\"/>  Would you like to hear another airplane fact?" + " </speak>";
+        String speechText = "<speak> " + primaryText + "<break time=\"1s\"/>  Would you like to hear another 2018 world cup fact?" + " </speak>";
         String imageUrl = images.get(key);
 
         Image image = getImage(imageUrl);

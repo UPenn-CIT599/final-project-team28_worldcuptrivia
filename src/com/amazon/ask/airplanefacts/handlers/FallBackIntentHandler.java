@@ -1,5 +1,3 @@
-// sources: https://github.com/alexa/skill-sample-java-fact
-
 package com.amazon.ask.airplanefacts.handlers;
 
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
@@ -19,10 +17,10 @@ public class FallBackIntentHandler implements RequestHandler{
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-        String speechText = "Sorry, I don't know that. Would you like an airplane fact?";
+        String speechText = "Sorry, I don't know that. Would you like a world cup fact?";
         return input.getResponseBuilder()
                 .withSpeech(speechText)
-                .withSimpleCard("Airplane Facts", speechText)
+                .withSimpleCard("World Cup Trivia", speechText)
                 .withReprompt(speechText)
                 .build();
     }

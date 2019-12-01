@@ -1,5 +1,3 @@
-// sources: https://github.com/alexa/skill-sample-java-fact
-
 package com.amazon.ask.airplanefacts.handlers;
 
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
@@ -18,10 +16,10 @@ public class CancelandStopIntentHandler implements RequestHandler {
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
-        String speechText = "Goodbye. Come back soon to hear an airplane fact";
+        String speechText = "Goodbye. Come back soon to hear a 2018 world cup fact";
         return input.getResponseBuilder()
                 .withSpeech(speechText)
-                .withSimpleCard("Airplane Facts", speechText)
+                .withSimpleCard("World Cup Trivia", speechText)
                 .build();
     }
 }
