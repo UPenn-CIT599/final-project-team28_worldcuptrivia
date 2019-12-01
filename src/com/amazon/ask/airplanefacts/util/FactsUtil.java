@@ -23,11 +23,11 @@ public class FactsUtil {
 
     public static Map getImageMap() {
         Map<String, String> map = new HashMap<>();
-        map.put("MostGoals", "https://s3.amazonaws.com/ask-samples-resources/images/airbus.jpg");
-        map.put("GameWithMostGoals", "https://s3.amazonaws.com/ask-samples-resources/images/airplane-1.jpg");
-        map.put("BestDefense", "https://s3.amazonaws.com/ask-samples-resources/images/airplane-2.jpg");
-        map.put("MostWoodWork", "https://s3.amazonaws.com/ask-samples-resources/images/airplane-3.jpg");
-        map.put("MostViolent", "https://s3.amazonaws.com/ask-samples-resources/images/airplane-4.jpg");
+        map.put("MostGoals", "https://cit591-public.s3.amazonaws.com/belgium.jpg");
+        map.put("GameWithMostGoals", "https://cit591-public.s3.amazonaws.com/england.jpg");
+        map.put("BestDefense", "https://cit591-public.s3.amazonaws.com/denmark.jpg");
+        map.put("MostWoodWork", "https://cit591-public.s3.amazonaws.com/croatia.jpg");
+        map.put("MostViolent", "https://cit591-public.s3.amazonaws.com/switzerland.jpg");
         return map;
     }
 
