@@ -18,7 +18,7 @@ public class DefensiveData {
 	/**
 	 * Method for calculating cumulative defensive data
 	 * @param data
-	 * @return
+	 * @return defensive data variables incremented by the data provided
 	 */
 	public DefensiveData merge(DefensiveData data)
 	{
