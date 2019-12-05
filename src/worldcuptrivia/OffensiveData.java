@@ -24,9 +24,8 @@ public class OffensiveData {
 
 	/**
 	 * Method for calculating cumulative offensive data
-	 * 
 	 * @param data
-	 * @return
+	 * @return incremented offensive data
 	 */
 	public OffensiveData merge(OffensiveData data) {
 		int attempts = totalAttempts + data.getTotalAttempts();
