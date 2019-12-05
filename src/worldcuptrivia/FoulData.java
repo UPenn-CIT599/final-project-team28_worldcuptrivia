@@ -17,9 +17,8 @@ public class FoulData {
 
 	/**
 	 * Method for calculating cumulative foul data
-	 * 
 	 * @param data
-	 * @return
+	 * @return incremented FoulData
 	 */
 	public FoulData merge(FoulData data) {
 		int yellowCards = totalYellowCards + data.getTotalYellowCards();
