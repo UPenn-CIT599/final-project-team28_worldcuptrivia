@@ -10,7 +10,7 @@ public class FactsUtil {
     public static Map getFactMap() {
         Map<String, String> map = new HashMap<>();
         map.put("MostGoals", "The team with the most goals was Belgium with 16.");
-        map.put("GameWithMostGoals", "The games with the most goals were: Belgium versus Tunisia."
+        map.put("GameWithMostGoals", "The games with the most goals were: Belgium versus Tunisia. "
         		+ "England versus Panama. and France versus Argentina. They all had 7 goals!");
         map.put("BestDefense", "The team with the best defense was Denmark with 0.5 goals "
         		+ "conceded per game.");
@@ -43,12 +43,3 @@ public class FactsUtil {
 
 }
 
-/*
-Royalty free image URLS
-https://www.pexels.com/photo/airplane-on-sky-during-sunset-48786/
-https://www.pexels.com/photo/airplane-aircraft-airport-transportation-system-113017/
-https://www.pexels.com/photo/jet-cloud-landing-aircraft-46148/
-https://www.pexels.com/photo/white-passenger-plane-flying-on-sky-during-day-time-67807/
-https://www.pexels.com/photo/royalty-free-airbus-passenger-aircraft-auckland-68155/
-https://www.pexels.com/photo/sky-traveling-airport-airplane-87460/
-*/
