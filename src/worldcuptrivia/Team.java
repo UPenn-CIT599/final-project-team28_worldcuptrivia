@@ -43,8 +43,7 @@ public class Team {
 
 	/**
 	 * Method to compute team's total number of games
-	 * 
-	 * @return
+	 * @return total games per team
 	 */
 	public int getTotalNumGames() {
 		return totalWins + totalLosses + totalDraws;
@@ -52,8 +51,7 @@ public class Team {
 
 	/**
 	 * Method to categorize game as win, loss, or draw
-	 * 
-	 * @param result
+	 * @param result, categorized games
 	 */
 	public void addGameResult(char result) {
 		if (result == 'W') {
