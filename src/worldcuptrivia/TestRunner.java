@@ -2,6 +2,10 @@ package worldcuptrivia;
 
 public class TestRunner {
 
+	/**
+	 * This is simply a debug/test class
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		FileParser fp = new FileParser(
 				"https://cit591-public.s3.amazonaws.com/MatchStats.csv");
