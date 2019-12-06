@@ -1,4 +1,4 @@
-# final-project-team28_worldcuptrivia
+# Final Project - Team28 - World Cup Trivia
 
 ###  Our team
 Harun Buljina
@@ -6,16 +6,12 @@ Harun Buljina
 Pierre Philippe Mourier
 
 ## World Cup Trivia on Alexa
-#### CIT 591, Fall ‘19
+#### CIT 591, Fall '19
 
 ### Project idea
 We will use the skills and concepts learnt in CIT 591 to build a World Cup soccer trivia skill on Amazon Alexa-enabled devices. We will start from a basic Amazon tutorial skill ([airplane facts](https://github.com/alexa/skill-sample-java-fact)) but extend its functionalities to read a cloud-hosted external CSV file and compute the facts to generate the trivia.
 
 ### Work breakdown
-We will check in weekly to review progress, discuss challenges and next steps & share the work.
-
-We will be inspired by the Agile software development approach, starting with core functions and then taking on more ambitious stretch goals, while adjusting our plan based on user feedback, available resources, pace and obstacles faced.
-
 1. AWS account set up :heavy_check_mark:
 - Created AWS Account
 - Created Lambda function
@@ -29,6 +25,6 @@ See https://cit591-public.s3.amazonaws.com/alexa-tutorial.png
 
 3. Planning/CRC cards for core functions :heavy_check_mark:
 - See our [repo wiki](https://github.com/UPenn-CIT599/final-project-team28_worldcuptrivia/wiki) for Design details
-4. Testing plan for core functions (TBD) :heavy_check_mark:
-5. Programming of core functions (TBD) :heavy_check_mark:
+4. Testing plan for core functions :heavy_check_mark:
+5. Programming of core functions :heavy_check_mark:
 6. UA, QA, Documentation & Shipping of Skill with core functions (TBD) :construction:
