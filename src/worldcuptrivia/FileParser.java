@@ -112,6 +112,7 @@ public class FileParser {
 						team2Passes, team2PassesCompleted, team2DistanceCovered, team2OffensiveData, team2DefensiveData,
 						team2FoulData);
 
+				// Game data
 				int gameNum = Integer.parseInt(elements1[0]);
 				int team1Score = team1GoalsFor;
 				int team2Score = team2GoalsFor;
