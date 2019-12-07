@@ -10,9 +10,9 @@ import java.util.HashMap;
 public class SoccerAnalysis {
 
 	// Instance variables
-	FileParser data;
-	HashMap<Integer, Game> games;
-	HashMap<String, Team> teams;
+	private FileParser data;
+	private HashMap<Integer, Game> games;
+	private HashMap<String, Team> teams;
 
 	// Constructor
 	public SoccerAnalysis() {
@@ -54,7 +54,7 @@ public class SoccerAnalysis {
 		String answer = "";
 
 		// loop through games and fill ArrayList with those that had the most goals
-		for (Game current : games.values()) {
+		for (Game current : getGames().values()) {
 			if (current.getTeam1Score() + current.getTeam2Score() > theMostGoals) {
 				gameWithMostGoals.clear();
 				gameWithMostGoals.add(current);
@@ -207,4 +207,13 @@ public class SoccerAnalysis {
 			return answer;
 		}
 	}
+
+	public HashMap<Integer, Game> getGames() {
+		return games;
+	}
+	
+	public HashMap<String, Team> getTeams() {
+		return teams;
+	}
+
 }
