@@ -17,6 +17,9 @@ import java.util.Optional;
 
 import static com.amazon.ask.request.Predicates.requestType;
 
+/*
+ * This class is the fall back in case the user does not respond for instance
+ */
 public class SessionEndedRequestHandler implements RequestHandler {
 
     private static final Logger log = LoggerFactory.getLogger(SessionEndedRequestHandler.class);
