@@ -35,7 +35,7 @@ public class FactsUtil {
         List<String> keys = new ArrayList<>();
         keys.add("MostGoals");
         keys.add("GameWithMostGoals");
-        keys.add("BestDefene");
+        keys.add("BestDefense");
         keys.add("MostWoodWork");
         keys.add("MostViolent");
         return keys;
