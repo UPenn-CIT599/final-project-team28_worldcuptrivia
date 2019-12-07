@@ -24,7 +24,7 @@ public class LaunchRequestHandler implements RequestHandler {
 
         String title = "World Cup Trivia";
         String primaryText = "Welcome to World Cup Trivia.";
-        String secondaryText = "Would you like to hear facts about the 2018 world cup?";
+        String secondaryText = "Would you like to hear some?";
         String speechText = "Welcome to World Cup Trivia. I can tell you facts about the 2018 world cup. Would you like to hear a world cup fact?";
         String imageUrl = "https://cit591-public.s3.amazonaws.com/cover.jpg";
 
