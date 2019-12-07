@@ -3,7 +3,7 @@ package worldcuptrivia;
 public class TestRunner {
 
 	/**
-	 * This is simply a debug/test class
+	 * This is simply a debug/test class, which we leave for reference
 	 * @param args
 	 */
 	public static void main(String[] args) {
