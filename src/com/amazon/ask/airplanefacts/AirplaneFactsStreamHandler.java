@@ -12,6 +12,11 @@ import com.amazon.ask.airplanefacts.handlers.*;
 
 public class AirplaneFactsStreamHandler extends SkillStreamHandler {
 
+	/**
+	 * This method compiles the various Alexa request types (launch, help, exit, etc.)
+	 * and bind our Skill ID for implementation
+	 * @return
+	 */
     private static Skill getSkill() {
         return Skills.standard()
                 .addRequestHandlers(
