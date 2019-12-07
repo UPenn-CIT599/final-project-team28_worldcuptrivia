@@ -99,6 +99,10 @@ public class Team {
 		foulData = foulData.merge(data);
 	}
 
+	/**
+	 * This method averages the distance per game for each team
+	 * @return average distance per game
+	 */
 	public double getAverageDistance() {
 		return (double) totalDistanceCovered / getTotalNumGames();
 	}
