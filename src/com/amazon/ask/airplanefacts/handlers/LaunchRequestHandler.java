@@ -17,6 +17,9 @@ import java.util.Optional;
 
 import static com.amazon.ask.request.Predicates.requestType;
 
+/*
+ * This class will handle how the Skill reacts to being launched
+ */
 public class LaunchRequestHandler implements RequestHandler {
 
     @Override
