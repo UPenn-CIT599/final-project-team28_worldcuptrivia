@@ -13,6 +13,10 @@ import java.util.Optional;
 
 import static com.amazon.ask.request.Predicates.intentName;
 
+/*
+ * This class identifies a standard Amazon Stop or Cancel user intention
+ * and exits the skill gracefully.
+ */
 public class CancelandStopIntentHandler implements RequestHandler {
     @Override
     public boolean canHandle(HandlerInput input) {
