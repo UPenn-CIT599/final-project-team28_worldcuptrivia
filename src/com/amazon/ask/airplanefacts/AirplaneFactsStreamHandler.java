@@ -1,3 +1,8 @@
+/*
+ * adapted from the Alexa Skill Samply by Amazon
+ * https://github.com/alexa/skill-sample-java-fact/
+ */
+
 package com.amazon.ask.airplanefacts;
 
 import com.amazon.ask.Skill;
