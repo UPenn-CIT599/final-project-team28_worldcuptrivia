@@ -12,6 +12,10 @@ import java.util.Map;
 
 public class FactsUtil {
 
+	/**
+	 * This method generates and returns a HashMap for facts
+	 * @return a HashMap of facts which is used as answers in Alexa
+	 */
     public static Map getFactMap() {
         Map<String, String> map = new HashMap<>();
         map.put("MostGoals", "The team with the most goals was Belgium with 16.");
@@ -26,6 +30,11 @@ public class FactsUtil {
         return map;
     }
 
+    /**
+     * This method creates and returns URL for pictures for Alexa devices
+     * with a display
+     * @return a HashMap with an image URL to illustrate each fact
+     */
     public static Map getImageMap() {
         Map<String, String> map = new HashMap<>();
         map.put("MostGoals", "https://cit591-public.s3.amazonaws.com/belgium.jpg");
@@ -36,6 +45,10 @@ public class FactsUtil {
         return map;
     }
 
+    /**
+     * This method generates a List of keys corresponding to the possible answers
+     * @return a List of keys
+     */
     public static List getKeys() {
         List<String> keys = new ArrayList<>();
         keys.add("MostGoals");
