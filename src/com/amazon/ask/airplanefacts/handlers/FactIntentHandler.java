@@ -15,6 +15,9 @@ import java.util.*;
 
 import static com.amazon.ask.request.Predicates.intentName;
 
+/*
+ * This class handles user requests for a new fact and returns a fact
+ */
 public class FactIntentHandler implements RequestHandler {
 
     @Override
@@ -39,7 +42,6 @@ public class FactIntentHandler implements RequestHandler {
 
         String title = "World Cup Trivia";
         String primaryText = facts.get(key);
-        //FIXME: If you would like to display additional text, please set the secondary text accordingly
         String secondaryText = "";
         String speechText = "<speak> " + primaryText + "<break time=\"1s\"/>  Would you like to hear another 2018 world cup fact?" + " </speak>";
         String imageUrl = images.get(key);
