@@ -1,5 +1,5 @@
 /*
- * adapted from the Alexa Skill Samply by Amazon
+ * adapted from the Alexa Skill Sample by Amazon
  * https://github.com/alexa/skill-sample-java-fact/
  */
 
