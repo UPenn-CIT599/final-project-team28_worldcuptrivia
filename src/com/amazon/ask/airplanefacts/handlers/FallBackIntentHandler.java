@@ -13,6 +13,9 @@ import java.util.Optional;
 
 import static com.amazon.ask.request.Predicates.intentName;
 
+/*
+ * This class will handle misunderstood inputs from the user 
+ */
 public class FallBackIntentHandler implements RequestHandler{
 
     @Override
