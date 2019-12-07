@@ -13,6 +13,9 @@ import java.util.Optional;
 
 import static com.amazon.ask.request.Predicates.intentName;
 
+/*
+ * This class will handle the input that Amazon will identify as a user asking for help
+ */
 public class HelpIntentHandler implements RequestHandler {
 
     @Override
