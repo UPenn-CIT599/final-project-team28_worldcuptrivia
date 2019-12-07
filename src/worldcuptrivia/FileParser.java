@@ -1,5 +1,9 @@
 package worldcuptrivia;
 
+/**
+ * This is the main parsing class
+ */
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.HashMap;
