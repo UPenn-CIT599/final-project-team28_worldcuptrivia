@@ -1,5 +1,5 @@
 /**
- * This will be the main analysis class
+ * This is the the main analysis class
  **/
 
 package worldcuptrivia;
@@ -23,7 +23,6 @@ public class SoccerAnalysis {
 
 	/**
 	 * This method computes the team that scored the most goals.
-	 * 
 	 * @return A string declaring the team and number of goals.
 	 */
 	public String teamWithMostGoals() {
@@ -46,7 +45,6 @@ public class SoccerAnalysis {
 
 	/**
 	 * This method computes the game with the most goals
-	 * 
 	 * @return string listing the game(s) with the most goals
 	 */
 	public String gameWithMostGoals() {
@@ -91,7 +89,6 @@ public class SoccerAnalysis {
 
 	/**
 	 * This method computes the team with least goals against on
-	 * 
 	 * @return the name of the team with the least goals against
 	 */
 	public String bestDefense() {
@@ -118,7 +115,6 @@ public class SoccerAnalysis {
 
 	/**
 	 * This method computes team you should see if you want to see woodwork
-	 * 
 	 * @param someGames an ArrayList of Games objects
 	 * @return the team name
 	 */
@@ -163,7 +159,6 @@ public class SoccerAnalysis {
 
 	/**
 	 * This method computes team you should see if you want to see red cards
-	 * 
 	 * @return the team name
 	 */
 	public String mostViolent() {
