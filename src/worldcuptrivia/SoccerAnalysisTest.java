@@ -1,5 +1,9 @@
 package worldcuptrivia;
 
+/*
+ * This is our test class for SoccerAnalysis
+ */
+
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
