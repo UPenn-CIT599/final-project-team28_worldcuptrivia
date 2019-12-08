@@ -27,5 +27,15 @@ class TeamTest {
 		assertEquals(1, peruWins);
 		// Peru won only 1 game
 	}
+	
+	@Test
+	void testGetTotalLosses() {
+		FileParser fp = new FileParser("https://cit591-public.s3.amazonaws.com/MatchStats.csv");
+		HashMap<String, Team> gt = fp.getTeams();
+		Team australia = gt.get("Australia");
+		int australiaLosses = australia.getTotalLosses();
+		assertEquals(2, australiaLosses);
+		// Australia lost 2 games
+	}
 
 }
