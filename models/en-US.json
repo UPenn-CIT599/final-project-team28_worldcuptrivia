@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "world cup trivia",
+      "invocationName": "airplane facts",
       "intents": [
         {
           "name": "AMAZON.FallbackIntent",
@@ -23,12 +23,20 @@
           "name": "FactIntent",
           "slots": [],
           "samples": [
-            "tell me a world cup fact",
-            "tell me new world cup fact",
-            "world cup trivia please",
-            "i want to hear some world cup trivia",
-            "tell me some world cup trivia",
-            "world cup trivia",
+            "tell me a fact",
+            "tell me recent airplane fact",
+            "tell me new airplane fact",
+            "airplane fact please",
+            "i want to hear airplane fact",
+            "i want to hear an airplane fact",
+            "give airplane fact",
+            "give me airplane fact",
+            "tell me airplane fact",
+            "read me an airplane fact",
+            "read airplane fact",
+            "tell me an airplane fact",
+            "airplane fact",
+            "fact"
           ]
         },
         {
