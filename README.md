@@ -33,6 +33,7 @@ See https://cit591-public.s3.amazonaws.com/alexa-tutorial.png
 
 ### How it works
 This an Alexa Skill. It works the same as most skills. 
+Here are some common operations:
 
 #### Launching the skill
 
@@ -64,5 +65,6 @@ This an Alexa Skill. It works the same as most skills.
 
 # Demo
 [Watch our demo!](https://cit591-public.s3.amazonaws.com/Alexa+Demo+v3.webm)
+We can provide access to our Amazon Developer Console for testing.
 
 
