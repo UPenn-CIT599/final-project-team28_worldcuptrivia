@@ -13,5 +13,21 @@ class FactsUtilTest {
 		assertEquals(5, length);
 		// We should have 5 facts
 	}
+	
+	@Test
+	void testGetImageMap() {
+		FactsUtil fu = new FactsUtil();
+		Integer length = fu.getImageMap().size();
+		assertEquals(5, length);
+		// We should have 5 images
+	}
+	
+	@Test
+	void testGetKeys() {
+		FactsUtil fu = new FactsUtil();
+		Integer length = fu.getKeys().size();
+		assertEquals(5, length);
+		// We should have 5 keys
+	}
 
 }
