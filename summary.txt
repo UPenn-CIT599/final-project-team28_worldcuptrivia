@@ -1,8 +1,8 @@
 Project Name: World Cup Trivia
 
-Project Description: We will use the skills and concepts learnt in CIT 591 to build 
+Project Description: We uses the skills and concepts learnt in CIT 591 to build 
 a World Cup soccer trivia skill on Amazon Alexa-enabled devices. 
-We will start from a basic Amazon tutorial skill (airplane facts) but extend its 
+We starts from a basic Amazon tutorial skill (airplane facts) and extended its 
 functionalities to read a cloud-hosted external CSV file and compute the facts to 
 generate the trivia, inspired by the Data Science with Airlines assignment.
 

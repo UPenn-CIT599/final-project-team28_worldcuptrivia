@@ -9,7 +9,7 @@ Pierre Philippe Mourier
 #### CIT 591, Fall '19
 
 ### Project idea
-We will use the skills and concepts learnt in CIT 591 to build a World Cup soccer trivia skill on Amazon Alexa-enabled devices. We will start from a basic Amazon tutorial skill ([airplane facts](https://github.com/alexa/skill-sample-java-fact)) but extend its functionalities to read a cloud-hosted external CSV file and compute the facts to generate the trivia, inspired by the Data Science with Airlines assignment.
+We uses the skills and concepts learnt in CIT 591 to build a World Cup soccer trivia skill on Amazon Alexa-enabled devices. We started from a basic Amazon tutorial skill ([airplane facts](https://github.com/alexa/skill-sample-java-fact)) and extended its functionalities to read a cloud-hosted external CSV file and compute the facts to generate the trivia, inspired by the Data Science with Airlines assignment.
 
 ### Work breakdown (+ who did what)
 1. AWS account set up (Pierre) :heavy_check_mark:
