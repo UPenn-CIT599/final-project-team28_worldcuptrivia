@@ -32,6 +32,9 @@ See https://cit591-public.s3.amazonaws.com/alexa-tutorial.png
 6. UA, QA, Documentation & Shipping of Skill with core functions :heavy_check_mark:
 
 [Watch our demo!](https://cit591-public.s3.amazonaws.com/Alexa+Demo+v2.webm)
-<img src="https://cit591-public.s3.amazonaws.com/demo_preview.PNG" width="591">
+
+<img src="https://cit591-public.s3.amazonaws.com/demo_preview1.PNG" width="591">
+<img src="https://cit591-public.s3.amazonaws.com/demo_preview2.PNG" width="591">
+<img src="https://cit591-public.s3.amazonaws.com/demo_preview3.PNG" width="591">
 
 
