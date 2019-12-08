@@ -31,7 +31,7 @@ See https://cit591-public.s3.amazonaws.com/alexa-tutorial.png
 5. Programming of core functions :heavy_check_mark:
 6. UA, QA, Documentation & Shipping of Skill with core functions :heavy_check_mark:
 
-![](https://cit591-public.s3.amazonaws.com/demo_preview.png)
+![Our deo](https://cit591-public.s3.amazonaws.com/demo_preview.PNG = 250x)
 
 [Watch our demo!](https://cit591-public.s3.amazonaws.com/Alexa+Demo+v2.webm)
 
