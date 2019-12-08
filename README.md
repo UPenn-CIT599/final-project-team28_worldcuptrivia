@@ -44,7 +44,7 @@ This an Alexa Skill. It works the same as most skills.
 
 <img src="https://cit591-public.s3.amazonaws.com/howto_ask2.png" width="591">
 
-<img src="https://cit591-public.s3.amazonaws.com/howto_display.png" width="591">
+<img src="https://cit591-public.s3.amazonaws.com/howto_display.png" width="1000">
 
 #### Error handling
 
