@@ -15,7 +15,17 @@ class TeamTest {
 		Team morocco = gt.get("Morocco");
 		int moroccoGames = morocco.getTotalNumGames();
 		assertEquals(3, moroccoGames);
-		// Which we know to be the true result
+		// Morocco played only 3 games because it was eliminated at the group stage
+	}
+	
+	@Test
+	void testGetTotalWins() {
+		FileParser fp = new FileParser("https://cit591-public.s3.amazonaws.com/MatchStats.csv");
+		HashMap<String, Team> gt = fp.getTeams();
+		Team peru = gt.get("Peru");
+		int peruWins = peru.getTotalWins();
+		assertEquals(1, peruWins);
+		// Peru won only 1 game
 	}
 
 }
