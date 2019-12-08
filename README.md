@@ -24,7 +24,9 @@ We will use the skills and concepts learnt in CIT 591 to build a World Cup socce
 See https://cit591-public.s3.amazonaws.com/alexa-tutorial.png
 
 3. Planning/CRC cards for core functions :heavy_check_mark:
-- See our [repo wiki](https://github.com/UPenn-CIT599/final-project-team28_worldcuptrivia/wiki) for Design details
+```diff 
+! See our [repo wiki](https://github.com/UPenn-CIT599/final-project-team28_worldcuptrivia/wiki) for Design details
+```
 4. Testing plan for core functions :heavy_check_mark:
 5. Programming of core functions :heavy_check_mark:
-6. UA, QA, Documentation & Shipping of Skill with core functions (TBD) :construction:
+6. UA, QA, Documentation & Shipping of Skill with core functions :heavy_check_mark:
