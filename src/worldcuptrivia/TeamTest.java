@@ -47,5 +47,15 @@ class TeamTest {
 		assertEquals(5, icelandGoalsAgainst);
 		// Iceland had 5 goals against
 	}
+	
+	@Test
+	void testGetTotalGoalsFor() {
+		FileParser fp = new FileParser("https://cit591-public.s3.amazonaws.com/MatchStats.csv");
+		HashMap<String, Team> gt = fp.getTeams();
+		Team germany = gt.get("Germany");
+		int germanyGoalsFor = germany.getTotalGoalsFor();
+		assertEquals(2, germanyGoalsFor);
+		// Germany had 2 goals for
+	}
 
 }
