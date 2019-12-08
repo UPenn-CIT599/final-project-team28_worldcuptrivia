@@ -36,23 +36,23 @@ This an Alexa Skill. It works the same as most skills.
 
 #### Launching the skill
 
-<img src="https://cit591-public.s3.amazonaws.com/howto_launch.png" width="591">
+<img src="https://cit591-public.s3.amazonaws.com/howto_launch.png" width="400">
 
 #### Asking for a fact
 
-<img src="https://cit591-public.s3.amazonaws.com/howto_ask1.png" width="591">
+<img src="https://cit591-public.s3.amazonaws.com/howto_ask1.png" width="400">
 
-<img src="https://cit591-public.s3.amazonaws.com/howto_ask2.png" width="591">
+<img src="https://cit591-public.s3.amazonaws.com/howto_ask2.png" width="400">
 
-<img src="https://cit591-public.s3.amazonaws.com/howto_display.png" width="1000">
+<img src="https://cit591-public.s3.amazonaws.com/howto_display.png" width="800">
 
 #### Error handling
 
-<img src="https://cit591-public.s3.amazonaws.com/howto_incorrect.png" width="591">
+<img src="https://cit591-public.s3.amazonaws.com/howto_incorrect.png" width="400">
 
 #### Asking for help
 
-<img src="https://cit591-public.s3.amazonaws.com/howto_help.png" width="591">
+<img src="https://cit591-public.s3.amazonaws.com/howto_help.png" width="400">
 
 #### Saying goodbye
 
@@ -60,10 +60,10 @@ This an Alexa Skill. It works the same as most skills.
 
 
 # Demo
-[Watch our demo!](https://cit591-public.s3.amazonaws.com/Alexa+Demo+v2.webm)
+[Watch our demo!](https://cit591-public.s3.amazonaws.com/Alexa+Demo+v3.webm)
 
-<img src="https://cit591-public.s3.amazonaws.com/demo_preview1.PNG" width="591">
-<img src="https://cit591-public.s3.amazonaws.com/demo_preview2.PNG" width="591">
-<img src="https://cit591-public.s3.amazonaws.com/demo_preview3.PNG" width="591">
+<img src="https://cit591-public.s3.amazonaws.com/demo_preview1.PNG" width="400">
+<img src="https://cit591-public.s3.amazonaws.com/demo_preview2.PNG" width="400">
+<img src="https://cit591-public.s3.amazonaws.com/demo_preview3.PNG" width="400">
 
 
