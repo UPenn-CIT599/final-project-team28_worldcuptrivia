@@ -45,6 +45,9 @@ This an Alexa Skill. It works the same as most skills.
 <img src="https://cit591-public.s3.amazonaws.com/howto_ask2.png" width="400">
 
 <img src="https://cit591-public.s3.amazonaws.com/howto_display.png" width="800">
+<img src="https://cit591-public.s3.amazonaws.com/demo_preview1.PNG" width="800">
+<img src="https://cit591-public.s3.amazonaws.com/demo_preview2.PNG" width="800">
+<img src="https://cit591-public.s3.amazonaws.com/demo_preview3.PNG" width="800">
 
 #### Error handling
 
@@ -56,14 +59,10 @@ This an Alexa Skill. It works the same as most skills.
 
 #### Saying goodbye
 
-<img src="https://cit591-public.s3.amazonaws.com/howto_exit.png" width="591">
+<img src="https://cit591-public.s3.amazonaws.com/howto_exit.png" width="400">
 
 
 # Demo
 [Watch our demo!](https://cit591-public.s3.amazonaws.com/Alexa+Demo+v3.webm)
-
-<img src="https://cit591-public.s3.amazonaws.com/demo_preview1.PNG" width="400">
-<img src="https://cit591-public.s3.amazonaws.com/demo_preview2.PNG" width="400">
-<img src="https://cit591-public.s3.amazonaws.com/demo_preview3.PNG" width="400">
 
 
