@@ -25,7 +25,7 @@ See https://cit591-public.s3.amazonaws.com/alexa-tutorial.png
 
 3. Planning/CRC cards for core functions :heavy_check_mark:
 ```diff 
-! See our repo wiki for both Java and Alex design details
+! See our repo wiki for both Java and Alexa design details
 ```
 4. Testing plan for core functions :heavy_check_mark:
 5. Programming of core functions :heavy_check_mark:
