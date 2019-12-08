@@ -30,3 +30,8 @@ See https://cit591-public.s3.amazonaws.com/alexa-tutorial.png
 4. Testing plan for core functions :heavy_check_mark:
 5. Programming of core functions :heavy_check_mark:
 6. UA, QA, Documentation & Shipping of Skill with core functions :heavy_check_mark:
+
+```diff
++ [![Watch our demo video](https://cit591-public.s3.amazonaws.com/demo_preview.png)](https://cit591-public.s3.amazonaws.com/Alexa+Demo+v2.webm)
+
+```
