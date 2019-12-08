@@ -37,5 +37,15 @@ class TeamTest {
 		assertEquals(2, australiaLosses);
 		// Australia lost 2 games
 	}
+	
+	@Test
+	void testGetTotalGoalsAgainst() {
+		FileParser fp = new FileParser("https://cit591-public.s3.amazonaws.com/MatchStats.csv");
+		HashMap<String, Team> gt = fp.getTeams();
+		Team iceland = gt.get("Iceland");
+		int icelandGoalsAgainst = iceland.getTotalGoalsAgainst();
+		assertEquals(5, icelandGoalsAgainst);
+		// Iceland had 5 goals against
+	}
 
 }
