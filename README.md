@@ -65,6 +65,7 @@ Here are some common operations:
 
 # Demo
 [Watch our demo!](https://cit591-public.s3.amazonaws.com/Alexa+Demo+v3.webm)
-We can provide access to our Amazon Developer Console for testing.
+
+We can provide access to our Amazon Developer Console for testing. Simply email us.
 
 
