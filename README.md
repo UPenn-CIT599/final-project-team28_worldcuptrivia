@@ -59,6 +59,7 @@ This an Alexa Skill. It works the same as most skills.
 <img src="https://cit591-public.s3.amazonaws.com/howto_exit.png" width="591">
 
 
+# Demo
 [Watch our demo!](https://cit591-public.s3.amazonaws.com/Alexa+Demo+v2.webm)
 
 <img src="https://cit591-public.s3.amazonaws.com/demo_preview1.PNG" width="591">
