@@ -1,0 +1,34 @@
+Project Name: World Cup Trivia
+
+Project Description: We will use the skills and concepts learnt in CIT 591 to build 
+a World Cup soccer trivia skill on Amazon Alexa-enabled devices. 
+We will start from a basic Amazon tutorial skill (airplane facts) but extend its 
+functionalities to read a cloud-hosted external CSV file and compute the facts to 
+generate the trivia, inspired by the Data Science with Airlines assignment.
+
+The end result will be an Alexa Skill that provides on-demand 2018 World Cup trivia.
+
+Actual work breakdown (who did what):
+1. AWS account set up (Pierre)
+- Created AWS Account
+- Created Lambda function
+- Created Amazon Developer for Alexa
+
+2. Replicate basic functionalities of airplane facts tutorial (Pierre)
+- Download [airplane facts tutorial repo](https://github.com/alexa/skill-sample-java-fact) locally
+- Set up the Lambda function
+- Build and deploy the Alexa Skill
+- Make a small change to the Skill
+- We did this to make sure the project was realistic
+
+3. Planning/CRC cards for core functions (Harun + Pierre)
+See our repo wiki for both Java and Alexa design details
+
+4. Testing plan for core functions (Harun + Pierre)
+
+5. Programming of core functions (Mostly Harun)
+
+6. UA, QA, Documentation & Shipping of Skill with core functions (Mostly Pierre)
+
+Link to your github repository:
+https://github.com/UPenn-CIT599/final-project-team28_worldcuptrivia
