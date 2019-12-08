@@ -31,6 +31,34 @@ See https://cit591-public.s3.amazonaws.com/alexa-tutorial.png
 5. Programming of core functions (Mostly Harun) :heavy_check_mark:
 6. UA, QA, Documentation & Shipping of Skill with core functions (Mostly Pierre) :heavy_check_mark:
 
+### How it works
+This an Alexa Skill. It works the same as most skills. 
+
+#### Launching the skill
+
+<img src="https://cit591-public.s3.amazonaws.com/howto_launch.png" width="591">
+
+#### Asking for a fact
+
+<img src="https://cit591-public.s3.amazonaws.com/howto_ask1.png" width="591">
+
+<img src="https://cit591-public.s3.amazonaws.com/howto_ask2.png" width="591">
+
+<img src="https://cit591-public.s3.amazonaws.com/howto_display.png" width="591">
+
+#### Error handling
+
+<img src="https://cit591-public.s3.amazonaws.com/howto_incorrect.png" width="591">
+
+#### Asking for help
+
+<img src="https://cit591-public.s3.amazonaws.com/howto_help.png" width="591">
+
+#### Saying goodbye
+
+<img src="https://cit591-public.s3.amazonaws.com/howto_exit.png" width="591">
+
+
 [Watch our demo!](https://cit591-public.s3.amazonaws.com/Alexa+Demo+v2.webm)
 
 <img src="https://cit591-public.s3.amazonaws.com/demo_preview1.PNG" width="591">
